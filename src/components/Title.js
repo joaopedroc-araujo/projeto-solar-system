@@ -5,7 +5,15 @@ class Title extends Component {
   render() {
     const { headline } = this.props;
     return (
-      <h2>{headline}</h2>
+      <h2
+        style={ {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '30px' } }
+      >
+        {headline}
+
+      </h2>
     );
   }
 }
